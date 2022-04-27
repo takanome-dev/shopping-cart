@@ -1,0 +1,46 @@
+@import "./header";
+@import "./filter";
+@import "./main";
+@import "./animations";
+@import "./cart";
+
+:root {
+	--animation-duration: 300ms;
+	--animation-timing-curve: ease-in-out;
+	--header-height: 4rem;
+
+	--boxShadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+
+	--blue-color: #1f8efe;
+	--darkBlue-color: #056cd3;
+	--grey-color: rgba(0, 0, 0, 0.5);
+	--lightBlue-color: #1f8efe4f;
+	--lightestBlue-color: #1f8efe10;
+	--lightRed-color: #e91f1f1a;
+	--lightGrey-color: rgba(0, 0, 0, 0.05);
+	--red-color: #e91f1f;
+	--text-color: rgba(0, 0, 0, 0.9);
+	--textDark-color: rgba(0, 0, 0, 0.95);
+	--white-color: #ffffff;
+	--yellow-color: #faaf00;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+body {
+	font-family: "Merriweather", serif;
+}
+
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.showCart {
+	display: initial;
+}

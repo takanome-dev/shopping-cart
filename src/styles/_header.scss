@@ -1,0 +1,51 @@
+header {
+	background-color: #fff;
+	box-shadow: var(--boxShadow);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: var(--header-height);
+	padding: 0 2rem;
+	position: sticky;
+	top: 0;
+
+	.logo {
+		width: 15rem;
+		img {
+			width: 100%;
+		}
+	}
+
+	.cartIcon {
+		position: relative;
+		color: var(--blue-color);
+		cursor: pointer;
+		padding: 0.8rem;
+		border-radius: 50%;
+		transition: background-color 300ms ease;
+		i {
+			font-size: 1.3rem;
+		}
+
+		&:hover {
+			background-color: var(--lightestBlue-color);
+		}
+
+		.cart-elements {
+			position: absolute;
+			top: 0;
+			right: 8%;
+			background-color: var(--red-color);
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			width: 1.4rem;
+			height: 1.4rem;
+
+			p {
+				color: var(--white-color);
+				animation: appear 300ms ease-in;
+			}
+		}
+	}
+}

@@ -1,0 +1,35 @@
+.filter {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 2rem;
+	padding: 0 2rem;
+
+	span + span {
+		margin-left: 0.5rem;
+	}
+
+	span {
+		border: 1px solid var(--lightBlue-color);
+		border-radius: 1rem;
+		padding: 0.5rem 1rem;
+		margin-bottom: 0.5rem;
+		color: var(--darkBlue-color);
+		cursor: pointer;
+		transition: transform 300ms ease, background-color 300ms ease-in;
+
+		&:hover {
+			background-color: var(--lightestBlue-color);
+		}
+
+		&:active {
+			transform: scale(0.9);
+		}
+	}
+
+	span.active {
+		// animation: appear 300ms ease-in;
+		background-color: var(--blue-color);
+		color: var(--white-color);
+	}
+}
